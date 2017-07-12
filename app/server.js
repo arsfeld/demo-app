@@ -33,7 +33,6 @@ app.use("*",function(req,res){
 
 
 MongoClient.connect('mongodb://' + db_host + ':27017/animals', (err, database) => {
-    // ... start the server
     app.listen(process.env.PORT || 3000,function(){
       console.log("Live at Port 3000");
     });
